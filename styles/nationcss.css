@@ -1,0 +1,57 @@
+.nation_content{
+    color: rgb(90, 85, 85);
+}
+
+.title_intro {
+    font-size: 7ch;
+    color: rgb(81, 80, 80);
+    font-family: monospace;
+}
+
+.hading{
+    font-size: 5ch;
+    color: rgb(81, 80, 80);
+    margin-left: 50px;
+    font-family: monospace;
+}
+
+.name-color{
+    color: rgb(84, 84, 207);
+    font-family: monospace;
+    font-size: 0.8ch;
+}
+
+.dropdownbutton{
+    font-size: 4ch;
+    text-align: center;
+    background-color: rgb(84, 84, 207);
+    height: 60px;
+    width: 26%;
+    border-width : 2px;
+    border-color: rgb(84, 84, 207);
+    margin-left: 37%;
+    border-radius: 40px;
+}
+
+select{
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #ddd;
+    -webkit-appearance: none;
+    background-position-x: 360px;
+}
+
+option{
+    background-color: rgb(252, 253, 253);
+    color: rgb(84, 84, 207);
+    font-size: 1ch;
+    border-width : 2px;
+    border-color: rgb(84, 84, 207);
+}
+
+.dropdownbutton:hover{
+    background-color: rgb(252, 251, 251);
+    color: rgb(84, 84, 207);
+    border-width : 2px;
+    border-color: rgb(84, 84, 207);
+}
+
+

@@ -1,0 +1,215 @@
+body{
+    background-color: rgb(222, 239, 249);
+}
+
+.icon{
+    margin: 0 0 0 5%;
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+
+.icon-name{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 0 1%;
+    color: rgb(90, 85, 85);
+    float: left;
+    height: 50px;
+}
+
+.main_img{
+    height: 300px;
+    width: 600px;
+}
+
+.side-by-side{
+    display : flex;
+    flex-direction : row;
+}
+
+.three_side-by-side-button{
+    margin-left: 170px;
+    margin-top: 100px;
+    display : flex;
+    flex-direction : row;
+}
+
+.one-of-three{
+    margin-bottom: 200px;
+}
+
+.menu-item ul {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin: 0 5% 0 0;
+    padding: 0;
+}
+
+.menu-item li {
+    float: left;
+    display: block;
+}
+
+.menu-item li a {
+    display: block;
+    color: rgb(90, 85, 85);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-item .ico {
+    display: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: rgb(210, 40, 40);
+}
+
+li a:hover::after{
+    position: relative;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: rgb(52, 52, 181);
+}
+
+.action::after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: rgb(52, 52, 181);
+}
+
+.heading ::after{
+    content: "";
+    display: table;
+    clear: right;
+}
+
+.full-page{
+    margin: 1% 0px 0px 8%;
+}
+
+.btnc{
+    margin: 40px 0px 0px 0px;
+    background-color: rgb(52, 52, 181);
+    color: azure;
+    width: 250px;
+    border-width: 2px;
+    border-color: rgb(52, 52, 181);
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.btnc:hover{
+    background-color: azure;
+    color: rgb(52, 52, 181);
+    border-width: 2px;
+    border-color: rgb(52, 52, 181);
+}
+
+.title_intro {
+    font-size: 10ch;
+    color: rgb(81, 80, 80);
+    font-family: monospace;
+}
+
+.basic_info{
+    color: rgb(90, 85, 85);
+    margin: 0 8% 0 0;
+}
+
+.name-color{
+    color: rgb(84, 84, 207);
+    font-family: monospace;
+    font-size: 0.8ch;
+}
+
+.info-size{
+    color: rgb(84, 84, 207);
+    font-size: 15px;
+}
+
+.button_img{
+    margin: 0 20px 0 0;
+    height: 250px;
+    width: 250px;
+}
+
+.contact-title{
+margin: 2% 38%;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 5ch;
+color: rgb(4, 4, 102);
+}
+
+.contact-detail{
+    display: flex;
+    margin: 5%;
+    width: 90%;
+    height: 60%;
+    color: aliceblue;
+    border-radius: 10px;
+    background-color: rgb(4, 4, 102);
+}
+
+.portfolio{
+    width: 25%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.quick-link{
+    margin-left: 15%;
+}
+
+.quick ul {
+    list-style-type: circle;
+}
+
+.quick li a {
+    display: block;
+    color: aliceblue;
+    text-align: left;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.quick li a:hover {
+    color: rgb(238, 244, 75);
+}
+
+.bxs-chevron-right{
+    margin-right: 5px;
+}
+
+.social{
+    margin-left: 15%;
+}
+
+@media screen and (max-width: 600px) {
+.menu-item ul a:not(:first-child) {display: none;}
+.menu-item .ico {
+    float: right;
+    display: block;
+}
+}
+
+@media screen and (max-width: 600px) {
+.menu-item.responsive {position: relative;}
+.menu-item.responsive .ico {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu-item.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
