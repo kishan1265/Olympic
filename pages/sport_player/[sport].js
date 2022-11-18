@@ -9,10 +9,14 @@ const sports_player = () => {
 
   console.log(router.query);
 
-  let data = [sport];
+  const data = {
+    sport,
+    nation: router.query.second,
+  };
+
   const options = {
     method: `POST`,
-    body: data,
+    body: JSON.stringify(data),
   };
 
   const [athleteData, setAthleteData] = React.useState(undefined);
@@ -43,7 +47,8 @@ const sports_player = () => {
             <div class="col col-4">Gender</div>
             <div class="col col-5">Country</div>
             <div class="col col-6">Sport</div>
-            <div class="col col-7">Medal</div>
+            <div class="col col-7">Year</div>
+            <div class="col col-8">Medal</div>
           </li>
           {athleteData &&
             athleteData.data.map((athlete, index) => (
@@ -66,7 +71,10 @@ const sports_player = () => {
                 <div class="col col-6" data-label="Sport">
                   {athlete.sport}
                 </div>
-                <div class="col col-7" data-label="Medal">
+                <div class="col col-7" data-label="year">
+                  {athlete.year}
+                </div>
+                <div class="col col-8" data-label="Medal">
                   {athlete.medal}
                 </div>
               </li>

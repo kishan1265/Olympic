@@ -12,7 +12,6 @@ const nation_player = () => {
   const data = {
     nation,
     sport: router.query.second,
-    year: router.query.third,
   };
 
   const options = {
@@ -44,7 +43,8 @@ const nation_player = () => {
             <div class="col col-4">Gender</div>
             <div class="col col-5">Country</div>
             <div class="col col-6">Sport</div>
-            <div class="col col-7">Medal</div>
+            <div class="col col-7">Year</div>
+            <div class="col col-8">Medal</div>
           </li>
           {athleteData &&
             athleteData.data.map((athlete, index) => (
@@ -67,7 +67,10 @@ const nation_player = () => {
                 <div class="col col-6" data-label="Sport">
                   {athlete.sport}
                 </div>
-                <div class="col col-7" data-label="Medal">
+                <div class="col col-7" data-label="year">
+                  {athlete.year}
+                </div>
+                <div class="col col-8" data-label="Medal">
                   {athlete.medal}
                 </div>
               </li>

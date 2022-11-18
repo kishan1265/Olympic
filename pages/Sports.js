@@ -29,7 +29,7 @@ const Sports = () => {
           name="sport"
         >
           <option value="Default">select sports</option>
-          <option value="cricket">Cricket</option>
+          <option value="badminton">Badminton</option>
           <option value="football">football</option>
           <option value="cycling">cycling</option>
         </select>

@@ -17,17 +17,18 @@ export default async function handler(req, res) {
   await client.query("set search_path to olympic");
 
   let queryReq = `select * from olympic.athlete where noc = '${data.nation}'`;
+
   if (isNaN(data.sport)) {
-    queryReq = await client.query(
-      (queryReq += `and lower(sport) = '${data.sport}'`)
-    );
+    queryReq += `and lower(sport) = '${data.sport}'`;
   }
 
   if (!isNaN(data.sport)) {
-    queryReq = await client.query((queryReq += ` and year = '${data.sport}'`));
+    queryReq += ` and year = ${data.sport}`;
   }
 
-  // console.log(queryReq);
+  console.log(queryReq);
 
-  res.status(200).json({ length: queryReq.rowCount, data: queryReq.rows });
+  const response = await client.query(queryReq);
+
+  res.status(200).json({ length: queryReq.rowCount, data: response.rows });
 }

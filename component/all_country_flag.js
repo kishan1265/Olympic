@@ -73,79 +73,79 @@ const all_country_flag = ({ title }) => {
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={cn} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="CHN"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={jp} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="JPN"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={gb} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="GBR"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={roc} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="RUS"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={au} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="AUS"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={nl} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="NED"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={fr} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="FRA"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={de} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="GER"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={it} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="ITA"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ca} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="CAN"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={br} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="BRA"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={nz} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="NZL"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={cu} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="CUB"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={hu} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="HUN"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={rok} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="KOR"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={pl} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="POL"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={czr} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="CZE"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ke} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="KEN"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={no} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="NOR"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ind} />
@@ -153,123 +153,123 @@ const all_country_flag = ({ title }) => {
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={jm} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="JAM"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={es} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="ESP"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={se} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="SWE"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ch} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="SUI"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={dk} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="DEN"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={hr} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="CRO"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ir} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="IRI"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={rs} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="SRB"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={be} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="BEL"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={bg} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="BUL"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={si} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="SLO"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={uz} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="UZB"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ge} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="GEO"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={cht} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="TPE"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={tr} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="TUR"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={gr} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="GRE"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ug} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="UGA"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ec} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="ECU"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ie} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="IRL"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={il} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="ISR"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={qa} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="QAT"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={bs} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="BAH"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={xk} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="KOS"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ua} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="UKR"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={by} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="BLR"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ro} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="ROU"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ve} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="VEN"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={hk} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="HKG"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={ph} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="PHI"></button>
       </div>
       <div className="innereb">
         <Image alt="alternative text" className="flag" src={sk} />
-        <button onClick={handle} className="btn" value="us"></button>
+        <button onClick={handle} className="btn" value="SVK"></button>
       </div>
     </section>
   );

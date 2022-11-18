@@ -22,6 +22,8 @@ const insert_player = () => {
       },
       body: JSON.stringify(data),
     });
+
+    alert("Player Inserted Success");
   };
 
   return (

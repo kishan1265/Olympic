@@ -1,5 +1,6 @@
 body{
     background-color: rgb(222, 239, 249);
+    font-family: "Inter",Sans-serif;
 }
 
 .icon{
@@ -35,7 +36,7 @@ body{
 }
 
 .one-of-three{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 .menu-item ul {
@@ -115,12 +116,14 @@ li a:hover::after{
 .title_intro {
     font-size: 10ch;
     color: rgb(81, 80, 80);
-    font-family: monospace;
+    font-family: "Inter",Sans-serif;
 }
 
 .basic_info{
     color: rgb(90, 85, 85);
     margin: 0 8% 0 0;
+    font-family: "Inter",Sans-serif;
+    font-size: 17px;
 }
 
 .name-color{
@@ -143,7 +146,7 @@ li a:hover::after{
 .contact-title{
 margin: 2% 38%;
 text-align: center;
-font-family: 'Times New Roman', Times, serif;
+font-family: "Inter",Sans-serif;
 font-size: 5ch;
 color: rgb(4, 4, 102);
 }
@@ -156,6 +159,8 @@ color: rgb(4, 4, 102);
     color: aliceblue;
     border-radius: 10px;
     background-color: rgb(4, 4, 102);
+    
+font-family: "Inter",Sans-serif;
 }
 
 .portfolio{
@@ -166,6 +171,8 @@ color: rgb(4, 4, 102);
 
 .quick-link{
     margin-left: 15%;
+    /* font-size: 20px; */
+    font-family: "Inter",Sans-serif;
 }
 
 .quick ul {
@@ -190,6 +197,27 @@ color: rgb(4, 4, 102);
 
 .social{
     margin-left: 15%;
+    font-family: "Inter",Sans-serif;
+}
+
+.player .btnc{
+    margin: 10px 0px 0px 37%;
+    margin-bottom: 50px;
+    background-color: rgb(52, 52, 181);
+    color: azure;
+    width: 400px;
+    height: 50px;
+    border-width: 2px;
+    border-color: rgb(52, 52, 181);
+    border-radius: 20px;
+    font-size: 30px;
+}
+
+.player .btnc:hover{
+    background-color: azure;
+    color: rgb(52, 52, 181);
+    border-width: 2px;
+    border-color: rgb(52, 52, 181);
 }
 
 @media screen and (max-width: 600px) {

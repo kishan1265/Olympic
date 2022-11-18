@@ -5,6 +5,7 @@ import Card from "../component/card_main";
 import all_sports from "./../public/side-sports-removebg.png";
 import all_year from "./../public/side-year-removebg.png";
 import Nation from "./../public/side-nation.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,8 +20,17 @@ export default function Home() {
             title={{ first: all_sports, second: "Sports", third: "/Sports" }}
           />
           <Card
-            title={{ first: all_year, second: "Olympic", third: "/Olympic" }}
+            title={{ first: all_year, second: "Season", third: "/Olympic" }}
           />
+        </div>
+
+        <div className="player">
+          <p className="title_intro" style={{ textAlign: "center" }}>
+            <b>Insert Player details</b>
+          </p>
+          <Link href="/insert_player">
+            <button className="btnc">Insert Player details</button>
+          </Link>
         </div>
       </section>
 

@@ -13,11 +13,27 @@ export default async function handler(req, res) {
 
   console.log("Connected🚀");
 
+  const data = JSON.parse(req.body);
+
+  console.log(data);
+
   await client.query("set search_path to olympic");
 
-  const queryReq = await client.query(
-    `select * from olympic.athlete where noc = 'IND'`
-  );
+  let queryReq = `select * from olympic.athlete where year = ${data.olympic}`;
 
-  res.status(200).json({ length: queryReq.rowCount, data: queryReq.rows });
+  console.log(`select * from olympic.athlete where year = ${data.olympic}`);
+
+  // if (data.nation == undefined) {
+  console.log(`and noc = '${data.nation}'`);
+  queryReq += `and (noc = '${data.nation}' or lower(sport) = '${data.nation}')`;
+  // }
+
+  // if (data.nation == undefined) {
+  //   console.log(`and sport = '${data.nation}'`);
+  //   queryReq += `and sport = '${data.nation}'`;
+  // }
+
+  const response = await client.query(queryReq);
+
+  res.status(200).json({ length: response.rowCount, data: response.rows });
 }

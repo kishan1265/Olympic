@@ -7,10 +7,14 @@ const olympic_player = () => {
   const router = useRouter();
   const { olympic } = router.query;
 
-  let data = [olympic];
+  const data = {
+    olympic,
+    nation: router.query.second,
+  };
+
   const options = {
     method: `POST`,
-    body: data,
+    body: JSON.stringify(data),
   };
 
   const [athleteData, setAthleteData] = React.useState(undefined);
@@ -18,6 +22,7 @@ const olympic_player = () => {
   useEffect(() => {
     fetch(`/api/olympic_player`, options).then((res) =>
       res.json().then((data) => {
+        console.log(data);
         setAthleteData(data);
       })
     );
@@ -31,36 +36,40 @@ const olympic_player = () => {
         <h2>Player Details</h2>
         <ul className="responsive-table">
           <li className="table-header">
-            <div class="col col-1">player id</div>
-            <div class="col col-2">Player Name</div>
-            <div class="col col-3">NOC</div>
-            <div class="col col-4">Gender</div>
-            <div class="col col-5">Country</div>
-            <div class="col col-6">Sport</div>
-            <div class="col col-7">Medal</div>
+            <div className="col col-1">player id</div>
+            <div className="col col-2">Player Name</div>
+            <div className="col col-3">NOC</div>
+            <div className="col col-4">Gender</div>
+            <div className="col col-5">Country</div>
+            <div className="col col-6">Sport</div>
+            <div className="col col-7">Year</div>
+            <div className="col col-8">Medal</div>
           </li>
           {athleteData &&
             athleteData.data.map((athlete, index) => (
-              <li class="table-row" id={`${index}`}>
-                <div class="col col-1" data-label="Player id">
+              <li className="table-row" id={`${index}`}>
+                <div className="col col-1" data-label="Player id">
                   {athlete.player_id}
                 </div>
-                <div class="col col-2" data-label="Player Name">
+                <div className="col col-2" data-label="Player Name">
                   {athlete.player_name}
                 </div>
-                <div class="col col-3" data-label="Noc">
+                <div className="col col-3" data-label="Noc">
                   {athlete.noc}
                 </div>
-                <div class="col col-4" data-label="Gender">
+                <div className="col col-4" data-label="Gender">
                   {athlete.gender}
                 </div>
-                <div class="col col-5" data-label="Country">
+                <div className="col col-5" data-label="Country">
                   {athlete.country_name}
                 </div>
-                <div class="col col-6" data-label="Sport">
+                <div className="col col-6" data-label="Sport">
                   {athlete.sport}
                 </div>
-                <div class="col col-7" data-label="Medal">
+                <div className="col col-7" data-label="year">
+                  {athlete.year}
+                </div>
+                <div className="col col-8" data-label="Medal">
                   {athlete.medal}
                 </div>
               </li>
